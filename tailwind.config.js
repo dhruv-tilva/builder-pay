@@ -38,6 +38,10 @@ module.exports = {
       },
       fontSize: {
         xss: "12px",
+        "5xl": "42px",
+      },
+      backgroundImage: {
+        curv: "url(@/assets/images/curv.svg)",
       },
     },
   },

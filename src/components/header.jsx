@@ -31,7 +31,7 @@ export const Header = () => {
         isShadow && "shadow-header"
       }`}
     >
-      <div className="flex items-center py-5 2xl:py-10 justify-between px-4 lg:px-8 xl:px-20 w-full">
+      <div className="flex items-center py-5 2xl:py-10 justify-between 2xl:max-w-screen-2xl mx-auto 2xl:px-0 px-4 lg:px-8 xl:px-20 w-full">
         <Logo
           onClick={() => {
             document
