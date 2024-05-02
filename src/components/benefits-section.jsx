@@ -3,7 +3,7 @@ import SubTitle from "./sub-title";
 import { benefitsLists } from "../data";
 import { CheckMark } from "@/icons/index";
 import Paragraph from "./paragraph";
-import Benefit from "@/assets/images/benefit.png";
+import Benefit from "@/assets/images/benefits.png";
 
 const BenefitsSection = () => {
   return (
@@ -36,7 +36,7 @@ const BenefitsSection = () => {
           Read More
         </a>
       </div>
-      <div className="mt-10 w-1/2">
+      <div className="mt-10 md:mt-0 md:w-1/2">
         <img src={Benefit} alt="" className="w-full" />
       </div>
     </section>

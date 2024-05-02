@@ -41,7 +41,7 @@ module.exports = {
         "5xl": "42px",
       },
       backgroundImage: {
-        curv: "url(@/assets/images/curv.svg)",
+        video: "url(@/assets/images/video.png)",
       },
     },
   },

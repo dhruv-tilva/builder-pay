@@ -4,7 +4,7 @@ import { CrossIcon, MenuIcon } from "@/icons/index";
 import { Button } from "./button";
 import { links } from "@/data";
 
-export const Header = () => {
+const Header = () => {
   const [isToggle, setIsToggle] = useState(false);
   const [isShadow, setIsShadow] = useState(false);
 
@@ -95,3 +95,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
