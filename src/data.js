@@ -1,6 +1,14 @@
 import FasterPayment from "@/assets/images/faster-payment.png";
 import LowerInsurance from "@/assets/images/lower-insurance.png";
 import MoreAttractive from "@/assets/images/more-attractive.png";
+import FullNative from "@/assets/images/fully-native.png";
+import TechnicalOptimization from "@/assets/images/technical-optimization.png";
+import TechnicalSupport from "@/assets/images/technical-support.png";
+import ExternalOptimization from "@/assets/images/external-optimization.png";
+import Seo from "@/assets/images/seo.png";
+import SeoOne from "@/assets/images/seo-1.png";
+import SeoTwo from "@/assets/images/seo-2.png";
+import SeoThree from "@/assets/images/seo-3.png";
 
 export const links = [
   {
@@ -152,6 +160,183 @@ export const footerLinks = [
       {
         id: 2,
         label: "Support 24",
+      },
+    ],
+  },
+];
+
+export const landers = [
+  {
+    id: 1,
+    image_url: FullNative,
+    title: "Fully Native",
+    description:
+      "Wasm is a powerful SEO solution nati built on all the major e-commerce platforms.",
+  },
+  {
+    id: 2,
+    image_url: TechnicalOptimization,
+    title: "Technical Optimization",
+    description:
+      "Techi is a powerful SEO solu natively built on all the major e-commerce platforms.",
+  },
+  {
+    id: 3,
+    image_url: TechnicalOptimization,
+    title: "Technical Optimization",
+    description:
+      "Techi is a powerful SEO solu natively built on all the major e-commerce platforms.",
+  },
+];
+
+export const builders = [
+  {
+    id: 1,
+    image_url: TechnicalSupport,
+    title: "Technical Support",
+    description:
+      "Wasm is a powerful SEO solution nati built on all the major e-commerce platforms.",
+  },
+  {
+    id: 2,
+    image_url: ExternalOptimization,
+    title: "Technical Optimization",
+    description:
+      "Techi is a powerful SEO solu natively built on all the major e-commerce platforms.",
+  },
+  {
+    id: 3,
+    image_url: ExternalOptimization,
+    title: "Technical Optimization",
+    description:
+      "Techi is a powerful SEO solu natively built on all the major e-commerce platforms.",
+  },
+];
+
+export const trades = [
+  {
+    id: 1,
+    image_url: Seo,
+    title: "SEO",
+    description:
+      "Lorem is a powerful SEO solution natively built on all the major e-cecrce platforms.",
+  },
+  {
+    id: 2,
+    image_url: FullNative,
+    title: "Content Optimization",
+    description:
+      "ReloadSEO is a powerful SEO solution natively built on all the major merce platforms.",
+  },
+  {
+    id: 3,
+    image_url: FullNative,
+    title: "Content Optimization",
+    description:
+      "ReloadSEO is a powerful SEO solution natively built on all the major merce platforms.",
+  },
+];
+
+export const seoS = [
+  {
+    id: 1,
+    image_url: SeoOne,
+    subTitle: "All the SEO tools you need for your store.",
+    titles: [
+      {
+        id: 1,
+        label: "Optimize your store for the",
+      },
+
+      {
+        id: 2,
+        label: "search engines and gain the.",
+      },
+      {
+        id: 3,
+        label: "edge",
+      },
+    ],
+    lists: [
+      {
+        id: 1,
+        label: "Native integration with all the major shopping platforms",
+      },
+      {
+        id: 2,
+        label: "On-page, Technical en External tools to grow your traffic",
+      },
+      {
+        id: 3,
+        label: "Competitor insights and analysis",
+      },
+    ],
+  },
+  {
+    id: 2,
+    image_url: SeoTwo,
+    subTitle: "All the SEO tools you need for your store.",
+    titles: [
+      {
+        id: 1,
+        label: "Optimize your store for the",
+      },
+
+      {
+        id: 2,
+        label: "search engines and gain the.",
+      },
+      {
+        id: 3,
+        label: "edge",
+      },
+    ],
+    lists: [
+      {
+        id: 1,
+        label: "Native integration with all the major shopping platforms",
+      },
+      {
+        id: 2,
+        label: "On-page, Technical en External tools to grow your traffic",
+      },
+      {
+        id: 3,
+        label: "Competitor insights and analysis",
+      },
+    ],
+  },
+  {
+    id: 3,
+    image_url: SeoThree,
+    subTitle: "All the SEO tools you need for your store.",
+    titles: [
+      {
+        id: 1,
+        label: "Optimize your store for the",
+      },
+
+      {
+        id: 2,
+        label: "search engines and gain the.",
+      },
+      {
+        id: 3,
+        label: "edge",
+      },
+    ],
+    lists: [
+      {
+        id: 1,
+        label: "Native integration with all the major shopping platforms",
+      },
+      {
+        id: 2,
+        label: "On-page, Technical en External tools to grow your traffic",
+      },
+      {
+        id: 3,
+        label: "Competitor insights and analysis",
       },
     ],
   },

@@ -6,7 +6,7 @@ import { footerLinks } from "../data";
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-11 lg:px-8 xl:px-20 2xl:px-0">
+    <footer className="px-4 py-11 lg:px-8 xl:px-48 2xl:px-0">
       <div className="grid grid-cols-1 gap-7 md:grid-cols-3 xl:grid-cols-4 lg:gap-14 xl:gap-32 max-w-screen-2xl mx-auto">
         <div className="col-span-3 xl:col-span-1">
           <Logo />

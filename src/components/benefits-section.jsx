@@ -1,43 +1,91 @@
 import React from "react";
 import SubTitle from "./sub-title";
-import { benefitsLists } from "../data";
-import { CheckMark } from "@/icons/index";
 import Paragraph from "./paragraph";
-import Benefit from "@/assets/images/benefits.png";
+import FullNative from "@/assets/images/fully-native.png";
+import { builders, landers, trades } from "../data";
 
 const BenefitsSection = () => {
   return (
-    <section className="px-4 md:flex md:items-center 2xl:justify-between md:gap-11 lg:gap-36 lg:px-24 xl:px-56 2xl:px-0 2xl:max-w-screen-2xl mx-auto py-7 xl:py-14 2xl:py-24">
+    <section className="px-4 lg:px-8 py-11 lg:py-24 max-w-screen-2xl mx-auto xl:px-36 2xl:px-0">
       <div>
-        <SubTitle>
-          Benefits for Lenders,{" "}
-          <span className="block">Builders, and Trades.</span>
+        <SubTitle className="md:text-center">
+          Everyone Benefits with BuilderPay
         </SubTitle>
-        <div className="mt-3 md:mt-6 space-y-2 lg:space-y-4 mb-7">
-          {benefitsLists.map((benefit, index) => {
-            return (
-              <div key={index}>
-                <div className="space-x-2 flex items-baseline">
-                  <span className="w-5 h-4 flex items-center justify-center rounded-full bg-primary-600">
-                    <CheckMark className="w-2.5 h-2.5 text-white" />
-                  </span>
-                  <Paragraph className="text-zinc-500 2xl:max-w-md">
-                    {benefit}
-                  </Paragraph>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <a
-          href="#"
-          className="inline-block font-medium font-roboto text-sm text-white py-3 px-8 rounded-md border border-white"
-        >
-          Read More
-        </a>
+        <Paragraph className="mt-3 md:text-center">
+          A win for the lender or Investor, a win for the prime or general
+          contractor and a win for the trades (subcontractors/suppliers).
+        </Paragraph>
       </div>
-      <div className="mt-10 md:mt-0 md:w-1/2">
-        <img src={Benefit} alt="" className="w-full" />
+      <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <h4 className="pb-2 w-full border-b border-white text-white font-semibold font-poppins text-base md:text-lg lg:text-xl xl:text-2xl uppercase">
+            Lenders
+          </h4>
+          <div className="mt-4 space-y-7">
+            {landers.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-md p-6 md:p-8 xl:p-12 bg-zinc-800"
+                >
+                  <img src={item.image_url} alt="" />
+                  <h5 className="font-semibold text-sm mt-3 md:mt-6 text-white italic md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-poppins">
+                    {item.title}
+                  </h5>
+                  <p className="text-xs md:text-sm font-poppins mt-3 md:mt-5 text-secondary-400 ">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div>
+          <h4 className="pb-2 w-full border-b border-white text-white font-semibold font-poppins text-base md:text-lg lg:text-xl xl:text-2xl uppercase">
+            Builders
+          </h4>
+          <div className="mt-4 space-y-7">
+            {builders.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-md p-6 md:p-8 xl:p-12 bg-secondary-950"
+                >
+                  <img src={item.image_url} alt="" />
+                  <h5 className="font-semibold text-sm mt-3 md:mt-6 text-white italic md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-poppins">
+                    {item.title}
+                  </h5>
+                  <p className="text-xs md:text-sm font-poppins mt-3 md:mt-5 text-secondary-400 ">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div>
+          <h4 className="pb-2 w-full border-b border-white text-white font-semibold font-poppins text-base md:text-lg lg:text-xl xl:text-2xl uppercase">
+            trades
+          </h4>
+          <div className="mt-4 space-y-7">
+            {trades.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-md p-6 md:p-8 xl:p-12 bg-zinc-800"
+                >
+                  <img src={item.image_url} alt="" />
+                  <h5 className="font-semibold text-sm mt-3 md:mt-6 text-white italic md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-poppins">
+                    {item.title}
+                  </h5>
+                  <p className="text-xs md:text-sm font-poppins mt-3 md:mt-5 text-secondary-400 ">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );
